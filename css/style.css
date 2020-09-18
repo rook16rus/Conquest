@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 
-/*    font-family: "Roboto", "Arial", sans-serif;*/
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: normal;
     color: #444240;
@@ -26,6 +26,7 @@ body {
 .section-title {
     font-family: "Playfair Display", sans-serif;
     font-size: 32px;
+    font-weight: normal;
     color: #1B1A17;
 }
 
@@ -51,3 +52,124 @@ body {
     background-color: #D4B098;
 }
 
+.main-header {
+    background-color: #FDFDFB;
+}
+
+.main-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 30px 0 25px;
+}
+
+.menu-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 35px 0 20px;
+}
+
+.menu-item {
+    margin-right: 65px;
+}
+
+.menu-item a {
+    font-size: 14px;
+    color: #555248;
+    text-decoration: none;
+}
+
+.product-navigation {
+    display: flex;
+
+    list-style: none;
+    margin: 0;
+    padding: 30px 0;
+    padding-top: 40px;
+}
+
+.product-navigation-item {
+    margin-right: 23px;
+}
+
+.product-navigation a {
+    display: inline-block;
+    font-size: 0;
+}
+
+.search-item {
+    width: 16px;
+    height: 16px;
+    background: url("../img/search.svg") no-repeat center;
+}
+
+.favourites-item {
+    width: 19px;
+    height: 16px;
+    background: url("../img/hearth.svg") no-repeat center;
+}
+
+.basket-item {
+    width: 18px;
+    height: 16px;
+    background: url("../img/basket.svg") no-repeat center;
+}
+
+.promo {
+    background-color: #FDFDFB;
+}
+
+.promo-wrapper {
+    display: flex;
+}
+
+.promo-text-column {
+    width: 432px;
+    margin-right: 55px;
+    padding-left: 87px;
+    padding-top: 225px;
+}
+
+.promo-title {
+    line-height: 160%;
+}
+
+.promo-title span {
+    font-size: 45px;
+}
+
+.promo-text {
+    color: #1B1A17;
+    opacity: 0.82;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 152%;
+
+    max-width: 260px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+.promo-img-column {
+    display: flex;
+    width: 506px;
+    position: relative;
+}
+
+
+.promo-price {
+    position: absolute;
+    top: 138px;
+}
+
+.promo-diameter {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+}
