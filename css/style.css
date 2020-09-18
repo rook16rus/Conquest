@@ -96,11 +96,15 @@ body {
 
 .product-navigation-item {
     margin-right: 23px;
+    position: relative;
 }
 
 .product-navigation a {
     display: inline-block;
     font-size: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .search-item {
@@ -287,7 +291,148 @@ body {
 }
 
 .quality {
-    background-color: #E5E5E5;
+    background-color: #FDFDFB;
     padding-top: 52px;
+    padding-bottom: 20px;
 }
+
+.quality-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.quality-img-column {
+    display: flex;
+    flex-direction: column;
+
+    width: 521px;
+    margin-left: 79px;
+    margin-right: 70px;
+}
+
+.paging {
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 108px;
+
+    font-family: "Prata", sans-serif;
+    font-size: 12px;
+    color: rgba(27,26,23,0.82);
+}
+
+.quality-text-column {
+    width: 400px;
+    padding-top: 78px;
+}
+
+.quality-text-column .button {
+    width: 40%;
+}
+
+.quality-title {
+    margin: 0;
+}
+
+.quality-text {
+    line-height: 150%;
+    margin-top: 38px;
+    margin-bottom: 45px;
+}
+
+.news {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.news-wrapper {
+    display: flex;
+}
+
+.news-text-column {
+    width: 481px;
+    margin-right: 60px;
+    padding-top: 140px;
+}
+
+.news-title {
+    margin: 0;
+}
+
+.news-text {
+    max-width: 380px;
+    margin-top: 40px;
+    margin-bottom: 118px;
+
+    line-height: 170%;
+}
+
+.news-text span {
+    color: #262421;
+    font-weight: bold;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-item {
+    margin-right: 18px;
+    font-size: 0;
+    position: relative;
+}
+
+.social-item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.social-instagram {
+    width: 23px;
+    height: 24px;
+    background: url("../img/instagram_icon.svg");
+}
+
+.social-facebook {
+    width: 12px;
+    height: 21px;
+    background: url("../img/facebook_icon.svg");
+}
+
+.social-twitter {
+    width: 22px;
+    height: 18px;
+    background: url("../img/twitter_icon.svg");
+}
+
+.news-images-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 470px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+
+}
+
+.news-images-column img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news-images-column img:last-of-type {
+    height: 100%;
+}
+
+
+
+
 
