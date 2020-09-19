@@ -99,7 +99,14 @@
 
                 <div class="catalog-products-column">
                     <h2 class="section-title catalog-title">Мужские часы</h2>
-                    <p class="sort">Сортировать по:<a href="#">популярности</a></p>
+                    <p class="sort">Сортировать по:
+                        <select name="product-sort">
+                            <option value="new">новизне</option>
+                            <option value="popular" selected>популярности</option>
+                            <option value="to_max">возрастанию</option>
+                            <option value="to_min">убыванию</option>
+                        </select>
+                    </p>
                     <ul class="catalog-list">
                         <li class="catalog-item">
                             <h3 class="catalog-item-title">Techne</h3>

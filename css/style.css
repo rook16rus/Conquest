@@ -549,7 +549,19 @@ body {
     left: -330px;
 }
 
+.sort {
+    position: absolute;
+    top: -50px;
+    right: 0px;
 
+    font-size: 14px;
+    line-height: 152%;
+    color: #BDB9B5;
+}
+
+.sort select {
+    border: none;
+}
 
 .filter-form {
     display: flex;
@@ -616,3 +628,34 @@ body {
 
 }
 
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 0;
+    margin-right: -40px;
+    margin-bottom: -40px;
+    padding: 0;
+}
+
+.catalog-item {
+    width: 252px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.catalog-item h3, .catalog-item p {
+    position: absolute;
+    padding-left: 20px;
+}
+
+.catalog-item-title {
+    padding-top: 15px;
+}
+
+.catalog-item-price {
+    padding-top: 50px;
+}
