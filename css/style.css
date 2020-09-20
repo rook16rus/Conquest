@@ -418,11 +418,14 @@ body {
     margin-top: 20px;
     margin-right: 108px;
 
+    position: relative;
+}
+
+.paging a {
     font-family: "Prata", sans-serif;
     font-size: 12px;
+    text-decoration: none;
     color: rgba(27,26,23,0.82);
-
-    position: relative;
 }
 
 .paging::after, .paging::before {
@@ -639,6 +642,27 @@ body {
 
 .breadcrumbs-item {
     margin-right: 32px;
+    position: relative;
+}
+
+.breadcrumbs-item::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%) rotate(135deg);
+
+    width: 4px;
+    height: 4px;
+
+    border: 1px solid #BDB9B5;
+    border-bottom: transparent;
+    border-right: transparent;
+}
+
+.breadcrumbs-item:last-of-type:after {
+    content: none;
 }
 
 .breadcrumbs-item a {
@@ -887,6 +911,34 @@ body {
     text-align: center;
 }
 
+.product-img-column > div {
+    position: relative;
+}
+
+.product-img-column > div::after, .product-img-column > div::before{
+    content: "";
+
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 48%;
+
+    border: 1px solid #1B1A17;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+.product-img-column > div::before {
+    left: 4px;
+    transform: translateY(-48%) rotate(-45deg);
+}
+
+.product-img-column > div::after {
+    right: 4px;
+    transform: translateY(-48%) rotate(135deg);
+}
+
 .product-img-list {
     display: flex;
     align-items: flex-start;
@@ -928,6 +980,21 @@ body {
     text-transform: uppercase;
 
     margin: 0;
+
+    position: relative;
+}
+
+.product-title::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 21px;
+    height: 17px;
+    background-image: url("../img/hearth.svg");
 }
 
 .product-price {
@@ -998,11 +1065,36 @@ body {
 
 .viewed-list {
     display: flex;
+    position: relative;
 
     list-style: none;
     margin: 0;
     margin-right: -40px;
     padding: 0;
+}
+
+.viewed-list::after, .viewed-list::before {
+    content: "";
+
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 48%;
+
+    border: 1px solid #1B1A17;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+.viewed-list::before {
+    left: -40px;
+    transform: translateY(-48%) rotate(-45deg);
+}
+
+.viewed-list::after {
+    right: -40px;
+    transform: translateY(-48%) rotate(135deg);
 }
 
 .viewed-item {
