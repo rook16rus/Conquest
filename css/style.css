@@ -97,6 +97,7 @@ body {
 .product-navigation-item {
     margin-right: 23px;
     position: relative;
+    z-index: 2;
 }
 
 .product-navigation a {
@@ -117,6 +118,25 @@ body {
     width: 19px;
     height: 16px;
     background: url("../img/hearth.svg") no-repeat center;
+}
+
+.favourites-item::after {
+    content: "1";
+
+    position: absolute;
+    right: -8px;
+    top: -5px;
+
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #E6C8B4;
+
+    font-size: 8px;
+    line-height: 160%;
+    color: #1B1A17;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .basket-item {
@@ -166,16 +186,82 @@ body {
     position: relative;
 }
 
+.promo-img-column div {
+    position: relative;
+    overflow-x: visible;
+    z-index: 1;
+}
+
+
+.promo-img-column div::before {
+    content: "";
+
+    position: absolute;
+    top: -85px;
+    left: -185px;
+    z-index: -2;
+
+    width: 472px;
+    height: 944px;
+    background-image: linear-gradient(to top, #EAE3D4 0%, rgba(234, 227, 212, 0 ) 100%);
+
+    border: 496px solid white;
+    border-radius: 50%;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+.promo-img-column div::after {
+    content: "";
+
+    width: 400px;
+    height: 90px;
+    background-color: white;
+
+    position: absolute;
+    z-index: -2;
+    left: -100px;
+    top: 777px;
+}
 
 .promo-price {
     position: absolute;
     top: 138px;
+    left: -40px;
+}
+
+.promo-price::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+
+    height: 1px;
+    width: 40px;
+    background-color: #8B8371;
 }
 
 .promo-diameter {
     position: absolute;
-    right: 0;
+    right: -30px;
     bottom: 142px;
+    z-index: 1;
+}
+
+.promo-diameter::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+
+    height: 1px;
+    width: 40px;
+    background-color: #8B8371;
 }
 
 .popular {
@@ -288,6 +374,21 @@ body {
     font-family: "Playfair Display", sans-serif;
     color: #1B1A17;
     text-decoration: none;
+
+    position: relative;
+}
+
+.more::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+
+    height: 1px;
+    width: 40px;
+    background-color: #8B8371;
 }
 
 .quality {
@@ -320,6 +421,32 @@ body {
     font-family: "Prata", sans-serif;
     font-size: 12px;
     color: rgba(27,26,23,0.82);
+
+    position: relative;
+}
+
+.paging::after, .paging::before {
+    content: "";
+
+    position: absolute;
+    top: 40%;
+
+    width: 7px;
+    height: 7px;
+
+    border: 1px solid #1B1A17;
+    border-bottom: transparent;
+    border-right: transparent;
+}
+
+.paging::after {
+    left: -25px;
+    transform: translateY(-40%) rotate(-45deg);
+}
+
+.paging::before {
+    right: -25px;
+    transform: translateY(-40%) rotate(135deg);
 }
 
 .quality-text-column {
