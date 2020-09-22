@@ -52,35 +52,35 @@
                             <legend>Стоимость</legend>
                             <div class="filter-price-item">
                                 <label for="catalog-filter-price" class="visually-hidden">Введите стоимость</label>
-                                <input type="range" class="catalog-filter-price" id="catalog-filter-price">
+                                <input type="range" value="0" min="0" max="100" multiple class="filter-price" id="catalog-filter-price">
                             </div>
                         </fieldset>
                         <fieldset class="filter-group">
                             <legend>Бренд</legend>
                             <ul class="filter-checkbox-list">
                                 <li class="filter-checkbox-item">
-                                    <label for="filter-brand-1">Techne</label>
                                     <input type="checkbox" name="brend-checkbox" id="filter-brand-1" checked value="Techne">
+                                    <label for="filter-brand-1" class="brand-label">Techne</label>
                                 </li>
                                 <li class="filter-checkbox-item">
-                                    <label for="filter-brand-2">Rado</label>
                                     <input type="checkbox" name="brend-checkbox" id="filter-brand-2" checked value="Rado">
+                                    <label for="filter-brand-2" class="brand-label">Rado</label>
                                 </li>
                                 <li class="filter-checkbox-item">
-                                    <label for="filter-brand-3">Bvlgari</label>
                                     <input type="checkbox" name="brend-checkbox" id="filter-brand-3" checked value="Bvlgari">
+                                    <label for="filter-brand-3" class="brand-label">Bvlgari</label>
                                 </li>
                                 <li class="filter-checkbox-item">
-                                    <label for="filter-brand-4">Tissot</label>
                                     <input type="checkbox" name="brend-checkbox" id="filter-brand-4" value="Tissot">
+                                    <label for="filter-brand-4" class="brand-label">Tissot</label>
                                 </li>
                                 <li class="filter-checkbox-item">
-                                    <label for="filter-brand-5">Omega</label>
                                     <input type="checkbox" name="brend-checkbox" id="filter-brand-5" value="Omega">
+                                    <label for="filter-brand-5" class="brand-label">Omega</label>
                                 </li>
                                 <li class="filter-checkbox-item">
-                                    <label for="filter-brand-6">Montblanc</label>
                                     <input type="checkbox" name="brend-checkbox" id="filter-brand-6" value="Montblanc">
+                                    <label for="filter-brand-6" class="brand-label">Montblanc</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -144,9 +144,8 @@
                             </a>
                         </li>
                         <li class="catalog-item">
-                            <h3 class="catalog-item-title"></h3>
-                            <p class="catalog-item-price"></p>
-                            <img src="img/product-half.png" alt="">
+                            <p class="catalog-item-event"><span>-20%</span><br> на вторую позицию в чеке</p>
+                            <img src="img/product-half.png" alt="Акция">
                         </li>
                         <li class="catalog-item">
                             <a href="product.html">
@@ -170,6 +169,15 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="paging">
+                        <ul class="paging-list">
+                            <li class="paging-item"><a href="#">01</a></li>
+                            <li class="paging-item"><a href="#">02</a></li>
+                            <li class="paging-item"><a href="#">03</a></li>
+                            <li class="paging-item"><a href="#">...</a></li>
+                            <li class="paging-item"><a href="#">12</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
